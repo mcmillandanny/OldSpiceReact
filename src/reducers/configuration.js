@@ -20,6 +20,7 @@ import survivalHatchet from '../assets/images/products/survival-hatchet.webp';
 
 const INITIAL_STATE = {
   data: [],
+  itemCount: 0,
   items: [
     {
       img: bourbonSoap,
@@ -161,25 +162,42 @@ const INITIAL_STATE = {
   cart: []
 };
 
+
 export const configuration = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case ADD_ITEM:
       action.item.quantity = action.item.quantity + 1;
-      const add = state.cart.filter(item => item.title !== action.item.title);
+
+      const add =
+        state.cart.indexOf(action.item) !== -1
+          ? state.cart.map(item =>
+              item.title === action.item.title ? (item = action.item) : item
+            )
+          : [...state.cart, action.item];
+
+          const addCount = add.map(item => item.quantity).reduce((a, v) => a + v);
+
 
       return {
         ...state,
-        cart: [...add, action.item]
+        itemCount: addCount,
+        cart: [...add]
       };
     case REMOVE_ITEM:
       action.item.quantity = action.item.quantity - 1;
-      const remove = state.cart.filter(
-        item => item.title !== action.item.title
-      );
+
+      const remove = state.cart
+        .map(item =>
+          item.title === action.item.title ? (item = action.item) : item
+        )
+        .filter(item => item.quantity > 0);
+
+        const remCount = remove.length > 0 ? remove.map(item => item.quantity).reduce((a, v) => a + v): 0;
 
       return {
         ...state,
-        cart: [...remove, action.item].filter(item => item.quantity > 0)
+        itemCount: remCount,
+        cart: [...remove]
       };
     default:
       return state;
