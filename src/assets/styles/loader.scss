@@ -1,3 +1,5 @@
+
+
 .loader {
   @include l-flex();
   @include l-center();
@@ -9,13 +11,7 @@
   padding: 10px;
   top: 0;
   width: 100%;
-
-  img {
-    width: 100%;
-    max-width: 783px;
-  }
 }
-
 
 .loaderText {
   color: #830000;
