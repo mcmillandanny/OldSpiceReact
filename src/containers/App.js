@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import logo from '../assets/images/old-spice-log.png';
+import logo from '../assets/images/oldspice.svg';
 import { connect } from 'react-redux';
 import { removeItem, addItem } from '../actions';
 import Home from './Home';
@@ -13,21 +13,21 @@ const App = ({ data, items, cart, add, remove, itemCount }) => (
     <Router>
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="logo" alt="Duke Cannon" />
+          <img src={logo} className="logo" alt="Old Spice" />
+          <nav className="App-nav">
+            <ul>
+              <li>
+                <Link className="home-nav" to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/shop">Shop</Link>
+              </li>
+              <li>
+                <Link to="/cart">Cart</Link>({itemCount})
+              </li>
+            </ul>
+          </nav>
         </header>
-        <nav className="App-nav">
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/shop">Shop</Link>
-            </li>
-            <li>
-              <Link to="/cart">Cart</Link>({itemCount})
-            </li>
-          </ul>
-        </nav>
         <Route exact path="/" render={() => <Home data={data} />} />
         <Route path="/shop" render={() => <Shop items={items} add={add} />} />
         <Route

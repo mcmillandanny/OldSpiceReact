@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Bounce, Expo, TimelineMax } from 'gsap/TweenMax';
+import { Expo, TimelineMax } from 'gsap/TweenMax';
 import { Wave1 } from './AnimateText';
 
 
@@ -10,9 +10,9 @@ class Home extends Component {
 
     tl.from('#logo', 3, {
       y: '-100vh',
-      ease: Bounce.easeOut
     }).to('#loader', 0.85, {
-      delay: 1,
+      y: '-100vh',
+      delay: 2.3,
       display: 'none',
       opacity: 0,
       ease: Expo.easeIn
@@ -27,6 +27,7 @@ class Home extends Component {
         <div id="logo">
         <Wave1/>
         </div>
+        
       </div>
     );
   }

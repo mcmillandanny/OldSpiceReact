@@ -1,5 +1,5 @@
 .App {
-  background-color: $offwhite;
+  background-color: $oldSpiceTan;
   text-align: center;
   
 
@@ -7,15 +7,21 @@
     @include l-flex();
     @include l-center();
     @include l-center-justified();
-    background-color: #573636;
+    background: rgba(246,44,9,1);
+    background: -moz-linear-gradient(45deg, rgba(246,44,9,1) 0%, rgba(237,78,53,1) 0%, rgba(217,32,8,1) 0%, rgba(216,37,14,1) 7%, rgba(133,6,2,1) 85%, rgba(117,0,0,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(246,44,9,1)), color-stop(0%, rgba(237,78,53,1)), color-stop(0%, rgba(217,32,8,1)), color-stop(7%, rgba(216,37,14,1)), color-stop(85%, rgba(133,6,2,1)), color-stop(100%, rgba(117,0,0,1)));
+    background: -webkit-linear-gradient(45deg, rgba(246,44,9,1) 0%, rgba(237,78,53,1) 0%, rgba(217,32,8,1) 0%, rgba(216,37,14,1) 7%, rgba(133,6,2,1) 85%, rgba(117,0,0,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(246,44,9,1) 0%, rgba(237,78,53,1) 0%, rgba(217,32,8,1) 0%, rgba(216,37,14,1) 7%, rgba(133,6,2,1) 85%, rgba(117,0,0,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(246,44,9,1) 0%, rgba(237,78,53,1) 0%, rgba(217,32,8,1) 0%, rgba(216,37,14,1) 7%, rgba(133,6,2,1) 85%, rgba(117,0,0,1) 100%);
+    background: linear-gradient(45deg, rgba(246,44,9,1) 0%, rgba(237,78,53,1) 0%, rgba(217,32,8,1) 0%, rgba(216,37,14,1) 7%, rgba(133,6,2,1) 85%, rgba(117,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f62c09', endColorstr='#750000', GradientType=1 );
     box-sizing: border-box;
     padding: 35px 20px 30px 20px;
-    border-bottom: 5px solid $green;
+    border-bottom: 5px solid #573636;
   }
 
   .logo {
-    height: 74px;
-    width: 290px;
+   margin-right: auto;
   }
 
   nav ul li {
@@ -24,7 +30,7 @@
     margin-right: 25px;
     padding: 10px 0;
     a {
-      color: $green;
+      color: white;
       font-family: $cabin;
       font-size: 18px;
       font-weight: 600;

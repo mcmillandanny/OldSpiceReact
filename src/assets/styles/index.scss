@@ -10,14 +10,22 @@ body, html {
     position: relative;
     width: 100%;
     height: 100%;
+    
   }
 
   main {
     width: 100%;
     height: 100%;
+    background-image: url("../images/wood-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
   }
 }
 
+$oldSpiceTan: #DCC19F;
+$oldSpiceRed: #830000;
+$oldSpiceBrown: #573636;
 $green: #374412;
 $offwhite: #fcfcfc;
 $tan: #bcb2a2;
