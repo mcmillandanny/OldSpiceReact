@@ -1,5 +1,8 @@
+
+
+
 .App {
-  background-color: $oldSpiceTan;
+  background-color: white;
   text-align: center;
   
 
@@ -17,7 +20,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f62c09', endColorstr='#750000', GradientType=1 );
     box-sizing: border-box;
     padding: 35px 20px 30px 20px;
-    border-bottom: 5px solid #573636;
+
   }
 
   .logo {
@@ -37,6 +40,27 @@
       letter-spacing: .25px;
       text-decoration: none;
       text-transform: uppercase;
+    }
+  }
+
+  .hero-content {
+    border-top: 1px solid blue;
+    margin-bottom: 50px;
+    z-index: 0;
+
+    img {
+      margin-top: 20px;
+    }
+  }
+
+  .column-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+    .col-1, .col-2, .col-3 {
+      padding: 10px;
     }
   }
 }

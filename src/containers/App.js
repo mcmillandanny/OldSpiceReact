@@ -7,6 +7,9 @@ import Home from './Home';
 import Shop from './Shop';
 import Cart from './Cart';
 import Loader from './Loader';
+import Ship from './ShipAnimation';
+import { Panels } from './Panels';
+
 
 const App = ({ data, items, cart, add, remove, itemCount }) => (
   <main>
@@ -33,7 +36,10 @@ const App = ({ data, items, cart, add, remove, itemCount }) => (
         <Route
           path="/cart"
           render={() => <Cart cart={cart} remove={remove} />}
-        />
+           />
+          <Ship />
+        <Panels />
+        
       </div>
     </Router>
     <Loader />

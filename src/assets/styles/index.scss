@@ -16,15 +16,16 @@ body, html {
   main {
     width: 100%;
     height: 100%;
-    background-image: url("../images/wood-bg.jpg");
+    // background-image: url("../images/bg-wall.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
   }
 }
 
+$oldSpiceBlue: #0061FF;
 $oldSpiceTan: #DCC19F;
-$oldSpiceRed: #830000;
+$oldSpiceRed: #ED2D02;
 $oldSpiceBrown: #573636;
 $green: #374412;
 $offwhite: #fcfcfc;
@@ -39,3 +40,4 @@ $cabin: 'Cabin', Sans-Serif;
 @import 'loader';
 @import 'product';
 @import 'cart';
+@import 'bg-ship.scss';
