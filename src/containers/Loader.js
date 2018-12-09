@@ -26,6 +26,9 @@ class Home extends Component {
       <div id="loader" className="loader loaderText">
         <div id="logo">
         <Wave1/>
+        <audio autoPlay>
+          <source src={require('../assets/audio/jingle.mp3')}/>
+        </audio>
         </div>
         
       </div>

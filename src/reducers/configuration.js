@@ -1,163 +1,233 @@
 import { ADD_ITEM, REMOVE_ITEM } from '../actions';
 
-import bourbonSoap from '../assets/images/products/bourbon-soap.webp';
-import leafSoap from '../assets/images/products/leaf-soap.webp';
-import pineSoap from '../assets/images/products/pine-soap.webp';
-import victorySoap from '../assets/images/products/victory-soap.webp';
-import airCologne from '../assets/images/products/air-cologne.webp';
-import bourbonCologne from '../assets/images/products/bourbon-cologne.webp';
-import landCologne from '../assets/images/products/land-cologne.webp';
-import seaCologne from '../assets/images/products/sea-cologne.webp';
-import afterShave from '../assets/images/products/after-shave.webp';
-import anchorPomade from '../assets/images/products/anchor-pomade.webp';
-import beardBalm from '../assets/images/products/beard-balm.webp';
-import faceWash from '../assets/images/products/face-wash.webp';
-import faceLotion from '../assets/images/products/face-lotion.webp';
-import handBalm from '../assets/images/products/hand-balm.webp';
-import hotShave from '../assets/images/products/hot-shave.webp';
-import tacticalPouch from '../assets/images/products/tactical-pouch.webp';
-import survivalHatchet from '../assets/images/products/survival-hatchet.webp';
+
+import deodorant1 from '../assets/images/products/deo-1.jpg';
+import deodorant2 from '../assets/images/products/deo-2.jpg';
+import deodorant3 from '../assets/images/products/deo-3.jpg';
+import deodorant4 from '../assets/images/products/deo-4.jpg';
+import deodorant5 from '../assets/images/products/deo-5.jpg';
+
+import wash1 from '../assets/images/products/wash-1.jpg';
+import wash2 from '../assets/images/products/wash-2.jpg';
+import wash3 from '../assets/images/products/wash-3.jpg';
+import wash4 from '../assets/images/products/wash-4.jpg';
+import wash5 from '../assets/images/products/wash-5.jpg';
+import wash6 from '../assets/images/products/wash-6.jpg';
+
+import bodyspray1 from '../assets/images/products/bodyspray-1.jpg';
+import bodyspray2 from '../assets/images/products/bodyspray-2.jpg';
+import bodyspray3 from '../assets/images/products/bodyspray-3.jpg';
+import bodyspray4 from '../assets/images/products/bodyspray-4.jpg';
+import bodyspray5 from '../assets/images/products/bodyspray-5.jpg';
+import bodyspray6 from '../assets/images/products/bodyspray-6.jpg';
+
+import scent1 from '../assets/images/products/scent-1.jpg';
+import scent2 from '../assets/images/products/scent-1.jpg';
+import scent3 from '../assets/images/products/scent-1.jpg';
+
+import swag1 from '../assets/images/products/swag1.jpg';
+import swag2 from '../assets/images/products/swag2.jpg';
+import swag3 from '../assets/images/products/swag3.jpg';
+import swag4 from '../assets/images/products/swag4.jpg';
+
+
 
 const INITIAL_STATE = {
   data: [],
   itemCount: 0,
   items: [
     {
-      img: bourbonSoap,
-      title: 'Big American Bourbon Soap',
-      price: 9.5,
-      description: `In the early days of the American Frontier, rugged pioneers indulged with a dry buffalo steak and a pull of whiskey, not $12 appletini and plate of bruschetta. Duke Cannon honors that independent, pioneering spirit by partnering with Buffalo Trace Distillery to add their award-winning Kentucky Straight Bourbon Whiskey to this Big American Bourbon Soap. Weighing in at a full 10 oz., this large, American-made soap has a rich, oak barrel scent that smells as good as bourbon tastes.`,
+      img: deodorant1,
+      title: 'WILDERNESS WITH LAVANDER',
+      price: 2.5,
+      description: `Once you smell like nature, you’ll forget about all of your problems and your life will be better and you’ll finally get that promotion you know you deserve. The Fresher Collection has real freshness forged with real ingredients and is inspired by nature`,
       quantity: 0,
-      category: 'Soap'
+      category: 'Deodorant'
     },
     {
-      img: leafSoap,
-      title: 'Big Ass Brick Of Soap - Leaf and Leather',
-      price: 9,
-      description: `Duke Cannon would rather explore the Great Plains on horseback than navigate the parking lot of an outlet mall in a compact car. It's in the Great Wide Open, about 1000 miles from the nearest food court, where a light breeze carries the scent of old leather mixed with fresh rolled tobacco leaves. Take a trip back in time when a nice, masculine scent didn't involve citrus fruits or flowers, and experience this American-made soap inspired by leaf and leather.`,
+      img: deodorant2,
+      title: 'ORIGINAL CLASSIC SOLID DEODORANT',
+      price: 2.5,
+      description: `Old Spice Original Deodorant reduces underarm odor for 24 hours. The citrus and clove scents of Original are often imitated but never duplicated. So easy to use you might accidentally put it on and only later realize your man-nificence`,
       quantity: 0,
-      category: 'Soap'
+      category: 'Deodorant'
     },
     {
-      img: pineSoap,
-      title: 'Big Ass Brick Of Soap - Fresh Cut Pine',
-      price: 9,
-      description: `Duke Cannon does not require the rich aroma of a $7 cappuccino to get him going in the morning, and he doesn't need comfy fashion boots to stay "cozy." Instead, Duke Cannon finds inspiration and warmth in hard work, like a morning spent chopping wood in the solitude of a pine forest. Experience the invigorating scent of fresh split pine and celebrate a return to basics with this American made soap inspired by the lush green wilderness of the Pacific Northwest.`,
+      img: deodorant3,
+      title: 'TUNDRA MINT SOLID',
+      price: 2.5,
+      description: `Tundra With Mint smells like arctic tundra and mint, which is something that normally only polar bears get to smell.Tell your underarm odor to take a hike! And then take a hike in the opposite direction from your underarm odor`,
       quantity: 0,
-      category: 'Colange'
+      category: 'Deodorant'
     },
     {
-      img: victorySoap,
-      title: 'Limited Edition WWII-Era Big Ass Brick Of Soap - Victory',
-      price: 9,
-      description: `The Big Ass Brick of Soap from Duke Cannon is designed to meet the high standards of hard working men who want to get clean and smell good without using shower gels and accessories. True to its name, our soap is big (10 oz.) and will last much longer than the dainty little bars in your local grocery. It also smells awesome (clean, fresh scent with a hint of grass) and contains steel cut grains for maximum gripability. If you enjoy activities like drinking American beer or using power tools, then frankly, this is the only soap meant for you.`,
+      img: deodorant4,
+      title: 'WILDERNESS',
+      price: 2.5,
+      description: `Old Spice Deodorant trounces underarm odor for 24 hours without aluminum or parabens. Once you smell like nature, you’ll forget about all of your problems and your life will be better and you’ll finally get that promotion you know you deserve`,
       quantity: 0,
-      category: 'Colange'
+      category: 'Deodorant'
     },
     {
-      img: airCologne,
-      title: 'Solid Cologne - Air',
-      price: 25,
-      description: `The open skies scent is very subtle and certainly a crowd pleaser. The fragrance is crisp and light and smells like fresh mountain air after the rain, not like your grandma's living room.`,
+      img: deodorant5,
+      title: 'KRAKENGARD WILD COLLECTION DEODORANT',
+      price: 2.5,
+      description: `Krakengärd smells like citrus, fresh herbs, and the unspeakable power of the ancient ocean. Old Spice Men's Deodorant overpowers stink with good-smellingness`,
       quantity: 0,
-      category: 'Colange'
+      category: 'Deodorant'
     },
     {
-      img: bourbonCologne,
-      title: 'Solid Cologne - Bourbon',
-      price: 25,
-      description: `The Bourbon Solid Cologne offers a woodsy, oak barrel scent inspired by the rackhouses at our favorite place in the world, the Buffalo Trace Distillery. If you've had the distinct pleasure of smelling our Big American Bourbon Soap, then you'll probably want this.`,
+      img: wash1,
+      title: 'SWAGGER BAR SOAP - 6 PACK',
+      price: 7.99,
+      description: `Swagger is the scent of confidence, which happens to smell like lime and cedarwood. Old Spice Swagger Bar Soap cleans away dirt and odor`,
       quantity: 0,
-      category: 'Colange'
+      category: 'Body Wash'
     },
     {
-      img: landCologne,
-      title: 'Solid Cologne - Land',
-      price: 25,
-      description: `The Redwood scent is masculine and warm containing hints of sandalwood, amber, citrus, rosemary, and clove. Smells like a walk through the Great Northwest, not a high school dance.`,
+      img: wash2,
+      title: 'TIMBER BAR SOAP – 6 PACK',
+      price: 7.99,
+      description: `The scent of woods and spices in Timber can fell even the hardest of hearts. Old Spice Timber Bar Soap cleans away dirt and odor. Step out of the shower fresher and manlier than ever`,
       quantity: 0,
-      category: 'Colange'
+      category: 'Body Wash'
     },
     {
-      img: seaCologne,
-      title: 'Solid Cologne - Sea',
-      price: 25,
-      description: `The Naval Supremacy scent is a light, fresh water fragrance that with subtle notes of citrus. If you love the scent of our Naval Supremacy soap, then stop reading and add this to your cart.`,
+      img: wash3,
+      title: 'PURE SPORT DUAL-SIDED BODY CLEANSER',
+      price: 7.99,
+      description: `Old Spice DUO, a flexible, dual-sided body cleanser that scrubs, cleans, and smooths skin. You’ll laugh as rich, cleansing lather pile-drives dirt —2X better than our basic body wash and a puff. Force your body to smell good with Old Spice Pure Sport, even when it doesn’t want to.`,
       quantity: 0,
-      category: 'Colange'
+      category: 'Body Wash'
     },
     {
-      img: hotShave,
-      title: 'Hot Shave Clear Warming Shave Gel',
-      price: 15,
-      description: `Master barbers know that the perfect shave starts with a little heat. Duke Cannon’s Hot Shave is a clear shaving gel with a unique warming sensation that helps deliver the closest possible shave. Simply apply a small amount with warm water and wait 20-30 seconds before shaving to activate the heat. This opens the pores, softens and lubricates the skin for precise, comfortable blade strokes. Upon completion, cool down with a splash of cold water and apply After-Shave balm to close the pores and hydrate skin.`,
+      img: wash4,
+      title: 'BODY WASH FOR MEN RELAX WITH LAVENDER',
+      price: 4.99,
+      description: ` Relax With Lavender smells like wild lavender, which is much rowdier than ordinary lavender. The Fresher Collection has real freshness forged with real ingredients and is inspired by nature`,
       quantity: 0,
-      category: 'Colange'
+      category: 'Body Wash'
     },
     {
-      img: afterShave,
-      title: 'Cooling After-Shave Balm',
-      price: 15,
-      description: `Any time a man wipes sharpened steel across his face, there is bound to be some damage. Find relief from that scorched earth feeling by going from hot to cold with Duke Cannon's After-Shave Balm. Made with menthol, it provides an extremely unique cooling effect that helps close the pores and provide instant comfort. Superior grade ingredients like aloe, shea butter, and allantoin provide hydration while minimizing razor burn irritation, and a light sandalwood fragrance leaves you feeling and smelling your handsome best. Free of alcohol, parabens, sulfates, and anything you don't want.`,
+      img: wash5,
+      title: 'SWAGGER FOAMER BODY WASH',
+      price: 3,
+      description: `Swagger is the scent of confidence, which happens to smell like lime and cedarwood. Old Spice Men's Body Wash Foamer is an easier-to-use, effective foam soap that cleans with a vengeance and leaves no dirt or odor behind`,
       quantity: 0,
-      category: 'Colange'
+      category: 'Body Wash'
     },
     {
-      img: anchorPomade,
-      title: 'News Anchor Pomade',
-      price: 15,
-      description: `Your dad never talked to you about hair styling, but be damn sure he used a decent pomade. After all, a man’s hair is a weapon and no hair commands more respect than that of a News Anchor. Duke Cannon’s News Anchor Pomade works on all hair types, delivering a natural matte finish to provide a classic, camera-ready look. Offers a medium-to-strong hold and a protein blend that strengthens and repairs your hard-working crown. Features the light scent of classic sandalwood with a hint of citrus. Prepare your hair for award-winning, 'round the clock coverage with Duke Cannon’s News Anchor Pomade.`,
+      img: wash6,
+      title: 'STEEL COURAGE HWC HYDRO WASH BODY WASH',
+      price: 3.5,
+      description: `2 in 1: Lasting Scent + Hydration • Fighting dry skin at the source • The Hardest Working Collection brings together more odor blocking, sweat defending, and dirt destroying power than ever before • Legendary cleansing for legendary men`,
       quantity: 0,
-      category: 'Colange'
+      category: 'Body Wash'
     },
     {
-      img: beardBalm,
-      title: 'Best Damn Beard Balm',
-      price: 15,
-      description: `While a well manicured beard is a symbol of power and prestige, an unruly and disheveled beard has the potential to lead society into complete anarchy. Do your duty and maintain your beard with Duke Cannon's Best Damn Beard Balm. Made with superior grade ingredients like lanolin and cocoa butter, our Beard Balm helps moisturize and protect a man's beard and the face underneath it. With a pleasant, woodsy fragrance, and packaged in a premium travel tin, it's like a portable Redwood forest in your pocket.`,
+      img: bodyspray1,
+      title: 'KRAKENGARD WILD COLLECTION BODY SPRAY',
+      price: 2.99,
+      description: `Krakengärd smells like citrus, fresh herbs, and the unspeakable power of the ancient ocean. Old Spice Men's Deodorant overpowers stink with good-smellingness `,
       quantity: 0,
-      category: 'Colange'
+      category: 'Body Spray'
     },
     {
-      img: handBalm,
-      title: 'Bloody Knuckles Hand Repair Balm',
-      price: 15,
-      description: `Dry, cracked hands are like living testaments to a man's hard work and ingenuity. And while hard working hands are to be celebrated, let's be honest; dry, cracked hands feel awful. That's why Duke Cannon introduced Bloody Knuckles Hand Repair Balm. Made with lanolin, it provides much-needed moisture without leaving the hands feeling sticky or greasy (like that stuff in the green jar.)`,
+      img: bodyspray2,
+      title: 'WOLFTHORN REFRESH BODY SPRAY',
+      price: 3.50,
+      description: `Old Spice enhances confidence and commands female attention. And that’s a pretty fancy trick indeed, provided you always buy products only really cool men buy.`,
       quantity: 0,
-      category: 'Colange'
+      category: 'Body Spray'
     },
     {
-      img: faceWash,
-      title: `Working Man's Face Wash`,
-      price: 14,
-      description: `While you're hard at work, dirt and grime flock to your face like hipsters to a vegan coffee shop with free wi-fi. That's why Duke Cannon created a face wash that works as hard as you do. Formulated to ward off the effects of double shifts, blistering winds, and bacon grease, it has a refreshing citrus scent and a little grit for optimal cleansing.`,
+      img: bodyspray3,
+      title: `SWAGGER REFRESH BODY SPRAY`,
+      price: 2.99,
+      description: `Swagger is the scent of confidence, which happens to smell like lime and cedarwood. Old Spice Men's Body Spray for bodies lasts all day, because your body is your body all day long—usually `,
       quantity: 0,
-      category: 'Colange'
+      category: 'Body Spray'
     },
     {
-      img: faceLotion,
-      title: 'Standard Issue Face Lotion',
-      price: 15,
-      description: `Every day, dirt, grease, and the elements wage a silent war on your mug, making it hard for you to put your best face forward. Hard-working folks don't have time to obsess over a fancy skin care regimen; you need a simple and straightforward defense. Standard Issue Face Lotion from Duke Cannon is formulated to provide instant, long lasting hydration while reducing excess oil and shine. It goes on smooth and lightweight without leaving a greasy residue. Fragrance free so your face doesn't smell like strawberries.`,
+      img: bodyspray4,
+      title: 'BEARGLOVE REFRESH BODY SPRAY',
+      price: 2.99,
+      description: `Bearglove scent commands grizzly-bear-level respect with smells of apple, citrus, and spice. Old Spice Men's Body Spray for bodies lasts all day, because your body is your body all day long—usually`,
       quantity: 0,
-      category: 'Colange'
+      category: 'Body Spray'
     },
     {
-      img: tacticalPouch,
-      title: 'Tactical Soap On A Rope Pouch',
-      price: 15,
-      description: `This U.S. military-grade tactical soap pouch should be standard-issue for every shower. To maximize hygiene in tactical situations, this equipment is engineered with a coarse mesh to scrub your hands and feet, and a softer mesh for less rough areas. The 550-mil-spec paracord keeps your large soap off the ground. Perfect for home, outdoor, field, or prison showers.`,
+      img: bodyspray5,
+      title: 'HAWKRIDGE REFRESH BODY SPRAY',
+      price: 2.99,
+      description: `Hawkridge outwits unsuspecting stink with its sandalwood and vanilla scent. Old Spice Men's Body Spray for bodies lasts all day, because your body is your body all day long—usually `,
       quantity: 0,
-      category: 'Colange'
+      category: 'Body Spray'
     },
     {
-      img: survivalHatchet,
-      title: 'The Duke Cannon Survivalist Hatchet',
-      price: 135,
-      description: `Whether hunting, camping, chomping wood, or killing zombies, the Duke Cannon Survivalist Hatchet has you covered. A collaboration with our friends at Hardcore Hammers, this hatchet is 100% hand-crafted in USA. The perfect gift for the outdoorsman or Rick Grimes of the family.`,
+      img: bodyspray6,
+      title: 'TIMBER FRESHER COLLECTION BODY SPRAY',
+      price: 2.99,
+      description: `The scent of woods and spices in Timber can fell even the hardest of hearts. Old Spice Men's Body Spray for bodies lasts all day, because your body is your body all day long—usually `,
       quantity: 0,
-      category: 'Colange'
-    }
+      category: 'Body Spray'
+    },
+    {
+      img: scent1,
+      title: 'PURE SPORT AFTERSHAVE',
+      price: 2.99,
+      description: `The unmistakably masculine scent of Old Spice.; Cool, crisp and clean`,
+      quantity: 0,
+      category: 'Scent'
+    },
+    {
+      img: scent2,
+      title: 'CLASSIC COLOGNE',
+      price: 2.99,
+      description: `Old Spice has won a magazines 2008 Reader's Choice Award for men’s fragrance. Try an Old Spice cologne, maybe the Old Spice Classic scent.`,
+      quantity: 0,
+      category: 'Scent'
+    },
+    {
+      img: scent3,
+      title: 'CLASSIC AFTER SHAVE',
+      price: 2.99,
+      description: `After you shave, use the distinctive scent of Old Spice Classic as an after shave. Old Spice after shave is perfect for you. `,
+      quantity: 0,
+      category: 'Scent'
+    },
+    {
+      img: swag1,
+      title: 'OS T-SHIRT',
+      price: 19.99,
+      description: `A special T-shirt (trust us). `,
+      quantity: 0,
+      category: 'Swag'
+    },
+     {
+      img: swag2,
+      title: 'MANCARD',
+      price: 9.99,
+      description: `Nothing better than getting your man a card stocked with money, so they can buy more stuff from us`,
+      quantity: 0,
+      category: 'Swag'
+    },
+    {
+      img: swag3,
+      title: 'KOOZIE',
+      price: 2.99,
+      description: `Keep your shampoo warm with this stylish koozie, comes in three different colors; Red, Dark Red, and Blood Red `,
+      quantity: 0,
+      category: 'Swag'
+    },
+    {
+      img: swag4,
+      title: 'BATH TOWEL',
+      price: 2.99,
+      description: `This towel is not meant to be used, it is meant to show off to your jealous friends for when they come over.`,
+      quantity: 0,
+      category: 'Swag'
+    },
   ],
   cart: []
 };

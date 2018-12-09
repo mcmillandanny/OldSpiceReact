@@ -30,10 +30,13 @@ class Shop extends React.Component {
 
     return (
       <section>
-        <nav>
+        <nav className="cat-nav">
           <span onClick={() => this.filterCategory('All')}>All</span>
-          <span onClick={() => this.filterCategory('Soap')}>Soap</span>
-          <span onClick={() => this.filterCategory('Colange')}>Cologne</span>
+          <span onClick={() => this.filterCategory('Deodorant')}>Deodorant</span>
+          <span onClick={() => this.filterCategory('Body Wash')}>Body Wash</span>
+          <span onClick={() => this.filterCategory('Body Spray')}>Body Spray</span>
+          <span onClick={() => this.filterCategory('Scent')}>Scent</span>
+          <span onClick={() => this.filterCategory('Swag')}>Swag</span>
         </nav>
         <div>
           {items.map((item, index) =>  {

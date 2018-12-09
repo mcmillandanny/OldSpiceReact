@@ -7,8 +7,10 @@ import Home from './Home';
 import Shop from './Shop';
 import Cart from './Cart';
 import Loader from './Loader';
-import Ship from './ShipAnimation';
-import { Panels } from './Panels';
+import Footer from './Footer'
+
+
+
 
 
 const App = ({ data, items, cart, add, remove, itemCount }) => (
@@ -37,9 +39,7 @@ const App = ({ data, items, cart, add, remove, itemCount }) => (
           path="/cart"
           render={() => <Cart cart={cart} remove={remove} />}
            />
-          <Ship />
-        <Panels />
-        
+           <Footer />
       </div>
     </Router>
     <Loader />

@@ -31,7 +31,7 @@
     @include l-center();
     @include l-center-justified();
     @include l-vertical();
-    border-bottom: 2px solid $green;
+    border-bottom: 2px solid blue;
     box-sizing: border-box;
     padding-bottom: 20px;
 
@@ -43,9 +43,10 @@
 
 
     img {
-      border: 1px solid $green;
       width: 200px;
-
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
       @media (min-width: 768px) {
         height: 200px;
         width: auto;
@@ -114,11 +115,10 @@
 }
 
 .product:nth-child(even) {
-  background-color: $green;
+  background-color:#607b8b;
   color: $tan;
 
   .media {
-    img { border: 1px solid $tan; }
     border-bottom: 2px solid $tan;
     @media (min-width: 768px) { border-bottom: 0; }
   }

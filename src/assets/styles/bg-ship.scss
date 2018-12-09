@@ -1,14 +1,13 @@
 
 #ship-ani{
     position: relative;
-    left: 0%;
-
+    
     #ship {
         position: absolute;
         z-index: 0;
-        width: 30%;
-        opacity: 0;
+        width: 100%;
+        // opacity: 0;
         transform: translate(50%, 50%);
+        left: 0%;
     }
-
 }

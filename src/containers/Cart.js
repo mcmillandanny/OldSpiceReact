@@ -18,6 +18,9 @@ class Cart extends Component {
           return <CartItem key={index} item={item} remove={remove} />;
         })}
         <h3>Total: ${total.toFixed(2)}</h3>
+        <div className="cart-info">
+          <h1>There is nothing in your Cart Dummy!!</h1>
+        </div>
       </div>
     );
   }
