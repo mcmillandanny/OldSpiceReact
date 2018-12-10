@@ -4,7 +4,6 @@ export const Footer = () => (
     <div>
         <footer>
             <nav className="footer-nav">
-            
                 <h1>Contact Us: </h1>
                     <ul className="nav-links">
                         <li><a src="http://facebook.com"><img className="fb" src={require('../assets/images/facebook.png')} alt="Facebook"/></a></li>
