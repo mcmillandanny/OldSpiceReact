@@ -14,7 +14,6 @@ class Cart extends Component {
 
     return (
       <div className="cart">
-          <h1>There is nothing in your Cart dummy!</h1>
         {cart.map((item, index) => {
           return <CartItem key={index} item={item} remove={remove} />;
         })}

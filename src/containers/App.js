@@ -15,30 +15,27 @@ import Footer from './Footer'
 
 const App = ({ data, items, cart, add, remove, itemCount }) => (
   <main>
-    <Router>
+    <Router basename={'/'}>
       <div className="App">
         <header className="App-header">
           <img src={logo} className="logo" alt="Old Spice" />
           <nav className="App-nav">
             <ul>
               <li>
-                <Link className="home-nav" to="/">Home</Link>
+                <Link className="home-nav" to={`${process.env.PUBLIC_URL}/`}>Home</Link>
               </li>
               <li>
-                <Link to="/shop">Shop</Link>
+                <Link to={`${process.env.PUBLIC_URL}/shop`}>Shop</Link>
               </li>
               <li>
-                <Link to="/cart">Cart</Link>({itemCount})
+                <Link to={`${process.env.PUBLIC_URL}/cart`}>Cart</Link>({itemCount})
               </li>
             </ul>
           </nav>
         </header>
-        <Route exact path="/" render={() => <Home data={data} />} />
-        <Route path="/shop" render={() => <Shop items={items} add={add} />} />
-        <Route
-          path="/cart"
-          render={() => <Cart cart={cart} remove={remove} />}
-           />
+        <Route exact path={`${process.env.PUBLIC_URL}/`} render={() => <Home data={data} />} />
+        <Route path={`${process.env.PUBLIC_URL}/shop`} render={() => <Shop items={items} add={add} />} />
+        <Route path={`${process.env.PUBLIC_URL}/cart`} render={() => <Cart cart={cart} remove={remove} />} />
            <Footer />
       </div>
     </Router>
