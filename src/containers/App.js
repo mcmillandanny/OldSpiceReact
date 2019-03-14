@@ -11,8 +11,6 @@ import Footer from './Footer'
 
 
 
-
-
 const App = ({ data, items, cart, add, remove, itemCount }) => (
   <main>
     <Router basename={'/'}>
